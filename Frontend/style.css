@@ -171,4 +171,60 @@
   pointer-events: auto;
 }
 
-/* Media Queris for responsive design */
+/* Media Queries for responsive design */
+
+@media screen and (max-width: 760px) {
+  .image-generator {
+    height: 45vh;
+    padding-top: 30px;
+    align-items: flex-start;
+  }
+
+  .image-generator h1 {
+    font-size: 1.8rem;
+  }
+
+  .image-generator p {
+    font-size: 1rem;
+  }
+
+  .image-generator .generate-form {
+    margin-top: 30px;
+    height: 52px;
+    display: block;
+  }
+
+  .generate-form .controls {
+    height: 40px;
+    margin-top: 15px;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .generate-form .generate-btn[disabled] {
+    opacity: 1;
+  }
+
+  .generate-form .img-quantity {
+    color: #fff;
+  }
+
+  .generate-form .img-quantity option {
+    color: #000;
+  }
+
+  .image-gallery {
+    margin-top: 20px;
+  }
+
+  .image-gallery .img-card:not(.loading) .download-btn {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .image-gallery .img-card {
+    width: 100%;
+  }
+}
